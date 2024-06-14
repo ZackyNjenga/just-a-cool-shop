@@ -2,6 +2,8 @@ import MaxWidthWrapper from "@/components/MaxWidthWrapper";
 import {PiChecksLight} from "react-icons/pi";
 import {FaStar, FaStarHalfStroke} from "react-icons/fa6";
 import Phone from "@/components/Phone";
+import {Icons} from "@/components/Icons";
+import {FaCheckCircle} from "react-icons/fa";
 
 export default function Home() {
     return (
@@ -19,7 +21,8 @@ export default function Home() {
                             </div>
                             <h1 className="relative w-fit tracking-tight text-balance
                    mt-16 font-bold leading-tight text-gray-900 text-5xl md:text-6xl lg:text-7xl">
-                                Think of an Image We <span className="bg-green-800 px-2 text-white">Customize </span>It
+                                Think of an Image We <span
+                                className="bg-green-800 px-2 rounded-lg mb-1 text-6xl text-white">Customize </span>It
                                 For Your Phone Case
                             </h1>
                             <p className="mt-8 text-lg lg:pr-10 max-w-prose text-center
@@ -33,15 +36,15 @@ export default function Home() {
                             <ul className="mt-8 space-y-2 text-left font-medium flex flex-col items-center sm:items-start">
                                 <div className="space-y-2">
                                     <li className="flex gap-1.5 items-center text-left">
-                                        <PiChecksLight className='h-5 w-5 shrink-0 text-green-600'/>
+                                        <PiChecksLight className='h-5 w-5 shrink-0 text-yellow-300'/>
                                         High quality, durable material
                                     </li>
                                     <li className="flex gap-1.5 items-center text-left">
-                                        <PiChecksLight className='h-5 w-5 shrink-0 text-green-600'/>
+                                        <PiChecksLight className='h-5 w-5 shrink-0 text-yellow-300'/>
                                         We guarantee your picture for 5 years
                                     </li>
                                     <li className="flex gap-1.5 items-center text-left">
-                                        <PiChecksLight className='h-5 w-5 shrink-0 text-green-600'/>
+                                        <PiChecksLight className='h-5 w-5 shrink-0 text-yellow-300'/>
                                         All modern models supported, Even the cheap chinese shit
                                     </li>
                                 </div>
@@ -77,11 +80,11 @@ export default function Home() {
                             </div>
                             <div className='flex flex-col justify-between items-center mt-2 sm:items-start'>
                                 <div className='flex gap-0.5'>
-                                    <FaStar className='h-4 w-4 text-yellow-600 fill-yellow-600' />
-                                    <FaStar className='h-4 w-4 text-yellow-600 fill-yellow-600' />
-                                    <FaStar className='h-4 w-4 text-yellow-600 fill-yellow-600' />
-                                    <FaStar className='h-4 w-4 text-yellow-600 fill-yellow-600' />
-                                    <FaStarHalfStroke className='h-4 w-4 text-yellow-600 fill-yellow-600' />
+                                    <FaStar className='h-4 w-4 text-yellow-600 fill-yellow-600'/>
+                                    <FaStar className='h-4 w-4 text-yellow-600 fill-yellow-600'/>
+                                    <FaStar className='h-4 w-4 text-yellow-600 fill-yellow-600'/>
+                                    <FaStar className='h-4 w-4 text-yellow-600 fill-yellow-600'/>
+                                    <FaStarHalfStroke className='h-4 w-4 text-yellow-600 fill-yellow-600'/>
                                 </div>
                                 <p><span className='font-semibold'>1,255</span> Happy customers</p>
                             </div>
@@ -101,6 +104,94 @@ export default function Home() {
                     </div>
                 </MaxWidthWrapper>
 
+            </section>
+            <section className='bg-slate-100 py-24'>
+                <MaxWidthWrapper className='flex flex-col items-center gap-16 sm:gap-32'>
+                    <div className='flex flex-col lg:flex-row items-center gap-4 sm:gap6'>
+                        <h2 className='order-1 mt-2 tracking-tight text-center text-balance
+                         !leading-tight font-bold text-5xl md:text-6xl text-gray-900
+                        '>
+                            What our <span className='relative px-2'>
+                            customers {' '}
+                            <Icons.underline className='hidden sm:block pointer-events-none
+                             absolute inset-x-0 -bottom-6 text-green-500'/></span>{' '} say
+                        </h2>
+                        <img src='/snake-2.png' className='w-24 order-0 lg:order-2'/>
+                    </div>
+
+                    <div className='mx-auto grid max-w2-xl gric-cols-1 px- lg:mx-6 lg:max-w-wnone
+                    lg:grid-cols-2 gap-y-16'>
+                        <div className='flex flex-auto flex-col gap-4 lg:pr-8 xl:pr-20'>
+                            <div className='flex gap-0.5 mb-2'>
+                                <FaStar className='h-5 w-5 text-yellow-300 fill-yellow-300'/>
+                                <FaStar className='h-5 w-5 text-yellow-300 fill-yellow-300'/>
+                                <FaStar className='h-5 w-5 text-yellow-300 fill-yellow-300'/>
+                                <FaStar className='h-5 w-5 text-yellow-300 fill-yellow-300'/>
+                                <FaStar className='h-5 w-5 text-yellow-300 fill-yellow-300'/>
+                            </div>
+
+                            <div className="text-lg  leading-8">
+                                <p>
+                                    The case feels like me. It reflects the kind of things I like
+                                    Its durable and I even got a compliment on the design. I&apos;ve
+                                    had the case for two months now and the
+                                    <span className='p-0.5 bg-slate-800 text-white'>image is still super clear</span>
+                                    I just love it
+                                </p>
+                            </div>
+                            <div className='flex gap-4 mt-2'>
+                                <img className='rounded-full h-12 w-12 object-cover'
+                                     src='/users/user-1.png'
+                                     alt="user"
+                                />
+                                <div className='flex flex-col'>
+                                    <p className='font-semibold'> Nathaniel </p>
+                                    <div className='flex gap-1.5 items-center text-zinc-600'>
+                                        <FaCheckCircle className='h-4 w- stroke-[3px] text-green-600'/>
+                                        <p className='text-sm'>
+                                            Verified Purchase
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        {/*Second user Review*/}
+                        <div className='flex flex-auto flex-col gap-4 lg:pr-8 xl:pr-20'>
+                            <div className='flex gap-0.5 mb-2'>
+                                <FaStar className='h-5 w-5 text-yellow-300 fill-yellow-300'/>
+                                <FaStar className='h-5 w-5 text-yellow-300 fill-yellow-300'/>
+                                <FaStar className='h-5 w-5 text-yellow-300 fill-yellow-300'/>
+                                <FaStar className='h-5 w-5 text-yellow-300 fill-yellow-300'/>
+                                <FaStar className='h-5 w-5 text-yellow-300 fill-yellow-300'/>
+                            </div>
+
+                            <div className="text-lg  leading-8">
+                                <p>
+                                    I&apos;m usually the kind that keeps phones keys and other
+                                    scratchy things in their pockets I was pleasantly supprised to find the
+                                    <span className='p-0.5 bg-slate-800 text-white'>image is still and untouched</span>
+                                    You cant find better cases for your phone
+                                </p>
+                            </div>
+                            <div className='flex gap-4 mt-2'>
+                                <img className='rounded-full h-12 w-12 object-cover'
+                                     src='/users/user-2.png'
+                                     alt="user"
+                                />
+                                <div className='flex flex-col'>
+                                    <p className='font-semibold'> Maxwell </p>
+                                    <div className='flex gap-1.5 items-center text-zinc-600'>
+                                        <FaCheckCircle className='h-4 w- stroke-[3px] text-green-600'/>
+                                        <p className='text-sm'>
+                                            Verified Purchase
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </MaxWidthWrapper>
             </section>
         </div>
     );
