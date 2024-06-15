@@ -4,6 +4,7 @@ import {FaStar, FaStarHalfStroke} from "react-icons/fa6";
 import Phone from "@/components/Phone";
 import {Icons} from "@/components/Icons";
 import {FaCheckCircle} from "react-icons/fa";
+import {Reviews} from "@/components/Reviews";
 
 export default function Home() {
     return (
@@ -192,6 +193,9 @@ export default function Home() {
                         </div>
                     </div>
                 </MaxWidthWrapper>
+                <div className='pt-16'>
+                    <Reviews/>
+                </div>
             </section>
         </div>
     );
